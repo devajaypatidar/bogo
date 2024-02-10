@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    /* /* margin: 5%; */
+    padding: 5%; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    zoom: 1.1
+}
+/* Center the text and the line */
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the horizontal lines */
+.hr {
+    flex-grow: 1;
+    border-top: 1px solid #000; 
+}
+
+/* Center the heading text */
+.heading-content {
+    margin: 0 20px; 
+    font-size: 1.5em;
+    color: #E78895;
+    font-weight: 500;
+}
+
+/* 
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.expanded {
+    width: 300px;
+    height: 200px;
+} */
+
+
+/* check box */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox */
+.roundCheckboxLabel {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: inline-block;
+    position: relative;
+}
+
+/* Style the inner dot */
+.roundCheckboxLabel::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Show the inner dot when checkbox is checked */
+input[type="checkbox"]:checked + .roundCheckboxLabel::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+/* Box Container */
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow boxes to wrap */
+    flex-direction: column;
+}
+
+/* Box */
+.box {
+    width: 80%; /* Adjust width as needed */
+    
+    background-color: #fdfdfd;
+    border: 1px solid #E78895;
+    border-radius: 5px;
+    box-shadow : 0 0 5px #E78895;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Checkbox */
+.roundCheckboxLabel {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+
+/* Content Container */
+.content {
+    padding: 20px;
+}
+
+/* Info Section */
+.info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10%; 
+}
+
+/* Details Section */
+.details {
+    margin-top: 12px;
+    font-size: larger;
+}
+
+/* Hidden Content */
+.hidden {
+    display: none;
+}
+
+/* Options Section */
+.options {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+/* Option */
+.option {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Option Label */
+.option label {
+    margin-right: 10px;
+}
+
+/* Bold Text */
+.bold {
+    font-weight: bold;
+}
+
+/* Discount Text */
+.discount {
+    background-color: red;
+    color: white;
+    padding: 7px;
+    margin-left: 7px;
+    border-radius: 2px;
+    font-size: inherit;
+    font-weight: 500;
+}
+
+.real-price{
+    margin-top: 7%;
+    text-decoration: line-through;
+    font-size: 12px;
+    color: rgb(175, 174, 174);
+}
+
+.first-content{
+    margin-left: 10px;
+}
+
+.size{
+    padding-left: 13%;
+    padding-right: 25%
+}
+
+select {
+    margin-top: 9px;
+    padding: 5px 5px ;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.sr-number {
+    margin-top: 0.8rem;
+    margin-left: 30px;
+}
+
+.one{
+    margin-top: 30px;
+}
+
+
+.delivery {
+    margin-right: 416px;
+}
+
+.addtocart{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #E78895;
+    border-radius: 3px;
+    width: 77%;
+    padding: 12px;
+}
+
+.button{
+    padding-left: 43%;
+}
+
+.checkout{
+    display: flex;
+    justify-content: space-between;
+}
